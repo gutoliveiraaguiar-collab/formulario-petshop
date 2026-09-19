@@ -1,4 +1,4 @@
-(https://github.com/user-attachments/files/32407631/readme_md.md)# Sistema de Vendas e Emissão de Recibo para PetShop
+# Sistema de Vendas e Emissão de Recibo para PetShop
 
 Um sistema web simples, leve e intuitivo para registro de serviços/produtos de PetShop com geração automática de recibos e dados simulados de Nota Fiscal (NF-e).
 
