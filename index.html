@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop - Registro de Serviço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2> PetShop Peludinhos - Nova Venda</h2>
+        <form action="index.php" method="post">
+            <fieldset>
+                <legend>Dados do Cliente</legend>
+                <label for="cliente_nome">Nome do Tutor: </label>
+                <input type="text" id="cliente_nome" name="cliente_nome" required>
+               <label for="cliente_cpf">CPF:</label> 
+               <input type="text" id="cliente_cpf" name="cliente_cpf" placeholder="000.000.000-00" required>
+            </fieldset>
+            <fieldset>
+            <legend>Dados do Animal</legend>
+            <label for="pet_nome">Nome do Pet</label>
+            <input type="text" id="pet_nome" name="pet_nome" required>
+            <label for="pet_especie">Espécie</label>
+            <select id="pet_especie" name="pet_especie">
+                <option value="Cão">Cão</option>
+                <option value="Gato">Gato</option>
+                <option value="Outro">Outro</option>
+            </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Serviço / Produto</legend>
+                <label for="servico"> Serviço Realizado</label>
+                <input type="text" id="servico" name="servico" placeholder="Ex: Banho e Tosa" required>
+                <label for="valor">Valor (R$):</label>
+                <input type="number" id="valor" name="valor" step="0.01" min="0" placeholder="50.00" required>
+            </fieldset>
+
+            <button type="submit">Gerar Recibo e Nota Fiscal</button>
+        </form>
+    </div>
+    
+</body>
+</html>
